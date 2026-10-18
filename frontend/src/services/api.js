@@ -1,7 +1,8 @@
+
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'https://smart-academic-system-mkiq.onrender.com/api',
+  baseURL: 'https://academic-management-b5qx.onrender.com/api',
   withCredentials: true,
   headers: {
     'Content-Type': 'application/json',
