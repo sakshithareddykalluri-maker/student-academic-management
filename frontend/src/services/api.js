@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: '/api',
+  baseURL: 'https://smart-academic-system-mkiq.onrender.com/api',
   withCredentials: true,
   headers: {
     'Content-Type': 'application/json',
@@ -9,7 +9,7 @@ const api = axios.create({
 });
 
 api.interceptors.response.use(
-  (response) => response.data,
+  (response) => response,
   (error) => {
     const message =
       error.response?.data?.message ||
